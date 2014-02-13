@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<title>pruebas JQuery</title>
+		<meta charset="utf-8" />
+		<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+		<script>
+			$(function(){
+				$('body,html').css('background','#fff');
+
+				$('h1').css('text-align','center');
+
+				var cssH2 = {
+					'text-align':'center',
+					'color':'red'
+				}
+
+				$('h2').css(cssH2);
+
+				var bgIntem2 = $('.item2').css('background-color');
+				var cItem2 = $('.item2').css('color');
+					console.log(bgIntem2 +' '+ cItem2);
+				if (bgIntem2 === cItem2) {
+					$('.item2').css('color','#fff');
+				};
+			});
+		</script>
+		<style>
+			body,html{
+				background: #ccc;
+				color: #000;
+				font-family: Arial;
+				margin: 0;
+				padding: 0;
+			}
+
+			.item1{
+				background: #f6f6f6;
+				height: 50px;
+				margin: 5% auto;
+				width: 300px
+			}
+
+			.item2{
+				display: block;
+				background: #000;
+				height: 50px;
+				margin: 5% auto;
+				width: 300px
+			}
+		</style>
+	</head>
+	<body>
+		<h1>metodo .css() de JQuery</h1>
+		<h2>metodo .css() pasando un obj. json</h2>
+		<div class="item1">item 1</div>
+		<div class="item2">item 2</div>
+	</body>
+</html>
