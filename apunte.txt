@@ -1,0 +1,28 @@
+JQUERY
+
+	$: funcion jquery
+
+	utilizar jquery
+		$(function(){ ... })
+
+	permite seleccionar elementos
+	$('tag.clase') $('#id') $('.clase')
+
+	SELECTORES
+		para el elemento $('#elem')
+
+		.css({
+			permite modificar el css de elem
+		})
+
+		.text('permite incrustar texto')
+
+		.html('<strong>incrusta html<strong>');
+
+		.not('.selecciona todos los elementos que no tengan la clase indicada')
+
+		.has('tiene contenido especificado')
+
+		.first() el primer elemento encontrado
+
+		.eq(n) selecciona en n elemento buscado
