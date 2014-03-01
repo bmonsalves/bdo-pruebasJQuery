@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>clases css jquery</title>
+		<meta charset="utf-8" />
+		<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+		<style>
+			body,html{
+				background: #000;
+				margin: 0;
+				padding: 0;
+			}
+			header{
+				display: block;
+				margin: 0 auto;
+				width: 365px;
+			}
+			#e1,#e2{
+				background: #0080ff;
+				display: block;
+				height: 100px;
+				margin: 20px auto;
+				width: 400px;
+			}
+			#e1{
+				background: #ff0040;
+				height: 150px;
+			}
+			#e2{
+				padding: 15px;
+				border-radius: 60px 0 60px 0;
+			}
+		</style>
+		<script>
+			$(function(){
+				var tam = $('header img').width();
+				console.log("tamaño inicial img: "+tam);
+
+				$('header img').width(100);
+
+				var tam = $('header img').width();
+				console.log("tamaño final img: "+tam);
+				
+				var tam = $("#e1").height();
+				console.log("tamaño inicial #e1: "+tam);
+
+				$("#e1").height(50);
+
+				var tam = $("#e1").height();
+				console.log("tamaño final #e1: "+tam);
+
+				var pos = $("#e2 p").position();
+
+				console.log("posicion #e2 p: "+pos.left +' '+ pos.top);
+
+				var pos = $("#e2 p").offset();
+
+				console.log("offset #e2 p: "+pos.left +' '+ pos.top);
+			});
+		</script>	
+	</head>	
+	<body>
+		<header>
+			<img src="quill.png" alt="prueba">
+		</header>
+		<div id="e1"></div>
+		<div id="e2">
+			<p>prueba asd</p>
+		</div>
+	</body>
+</html>

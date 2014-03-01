@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<title>pruebas JQuery</title>
+		<meta charset="utf-8" />
+		<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+		<script>
+			$(function(){
+
+				$('#prueba').text('hola mundo')
+
+				$('.prueba').html('<strong>incrusta html<strong>');
+
+				$('div').css({
+					'background-color':'black',
+					'color':'white'
+				});
+
+			});
+
+
+		</script>
+	</head>
+	<body>
+		<div id="prueba"></div>
+		<div class="prueba"></div>
+
+		<div class="midiv">
+			<article>
+				<p>prueba 1</p>
+			</article>
+		</div>
+		<div>
+			<article>
+				<p>prueba 2</p>
+			</article>
+		</div>
+	</body>
+</html>

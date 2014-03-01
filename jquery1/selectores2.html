@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<title>pruebas JQuery</title>
+		<meta charset="utf-8" />
+		<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+		<script>
+			$(function(){
+				var seleccion = $('.ejem1');
+
+				if(seleccion.length){
+					console.log('exiten '+seleccion.length)
+				}else{
+					console.log('no exiten')
+				}
+
+				//seleccion.not('.cl1').text('este elemento no tiene la clase cl1');
+
+				//seleccion.has('p').text('tiene un p en su contenido')
+
+				$('li').first().html('<strong>elemento 0</strong>')
+				$('li').eq(3).html('<strong>elemento 3</strong>');
+			});
+		</script>
+	</head>
+	<body>
+		<div class="ejem1">
+			<p></p>
+		</div>
+		<div class="cl1">
+			<span></span>
+		</div>
+		<ul>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+		</ul>
+	</body>
+</html>

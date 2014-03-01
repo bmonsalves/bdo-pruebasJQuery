@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>clases css jquery</title>
+		<meta charset="utf-8" />
+		<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+		<script>
+			$(function(){
+				/*
+				$("#pruebaId").attr('class',function(){
+					var cadena = "cambio_de_clase";
+					return cadena;
+				});
+				var clase = $("#pruebaId").attr('class');
+				alert(clase);
+				*/
+
+				$("a").on('click',function(e){
+					e.preventDefault();
+					var link = $(this).attr('href');
+					alert('esta saliendo del sitio');
+					location.href = link;
+				})
+			});
+		</script>	
+	</head>	
+	<body>
+		<div class="pruebaClass" id="pruebaId"></div>
+		<a href="http://backapp.cl">backapp</a>
+		<form action="">
+			<input type="">
+			<input type="submit">
+		</form>
+	</body>
+</html>
