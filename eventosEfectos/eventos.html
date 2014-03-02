@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>eventos efectos</title>
+		<style>
+			.capa{
+				font-size: 20px;
+				background-color: #ddd;
+				padding: 30px;
+			}
+			p{
+				margin: 2px;
+				padding: 5px;
+			}
+			.gris{
+				background-color: #ddd;
+			}
+			.azul{
+				background-color: #ccf;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="capa" class="capa"> <a href="#" id="enlace">hola</a></div>
+		
+		<p>texto 1</p>
+		<p>texto 2</p>
+		<p>texto 3</p>
+		<p>texto 4</p>
+
+		<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+		<script>
+			$(function(){
+				$("#capa").on("click",function(){
+					//$("#enlace").css("font-size","150px");
+					$("p:odd").addClass("gris");
+					$("p:even").addClass("azul");
+				});
+			});
+		</script>
+	</body>
+</html>

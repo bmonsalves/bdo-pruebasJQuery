@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>eventos efectos</title>
+		<style>
+			body{
+				font-family: sans-serif;
+			}
+			.elemento{
+				padding: 50px;
+				width: 400px;
+				background-color: #ddd;
+				border: 1px solid #eee; 
+			}
+			.elemento div{
+				display: none;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="elemento">
+			<a href="#"><span>+</span>mis cosas</a>
+		
+			<div>
+				<p>esto se mostraria con datos adicionales</p>
+				<p> una informacion larga....</p>
+			</div>
+		</div>
+
+		<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+		<script>
+			$(function(){
+				$(".elemento").children("a").click(function(){
+					$(this).next().slideDown(1000);
+				});
+			});
+		</script>
+	</body>
+</html>

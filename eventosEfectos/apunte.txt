@@ -1,6 +1,9 @@
 funcion jquery $(): 
 	base que sustenta todo el uso de jquery
 	extiende cualquier cosa para que tenga las funcionalidades del framework
+	usos:
 		-objetos nativos de js (dom)
 		-selector de css
 		-generar elementos "en linea" en tiempo de ejecucion
+
+(p:odd o :even= selecciona parrafos pares / impares)
