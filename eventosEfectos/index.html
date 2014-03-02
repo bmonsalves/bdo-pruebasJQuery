@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>eventos efectos</title>
+		<style>
+			.capa{
+				font-size: 20px;
+				background-color: #ddd;
+				padding: 30px;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="capa" class="capa">hola</div>
+		<div id="titulo"></div>
+		<div id="imagen"></div>
+
+		<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+		<script>
+			$(function(){
+				$("body").css("background-color", "#c1c1c1");
+				$("<h1>prueba</h1>").css("opacity",0).appendTo($("#titulo")).animate({"opacity":1},3000);
+				$("#capa").slideUp(5000);
+
+				$("<img src='https://scontent-b-mia.xx.fbcdn.net/hphotos-prn1/t1/s720x720/1012028_824144360945121_1842044938_n.png' />").appendTo("#imagen");
+			});
+		</script>
+	</body>
+</html>
